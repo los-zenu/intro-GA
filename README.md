@@ -1,5 +1,35 @@
 # Introducción a los Algoritmos Geneticos
 
+## Algoritmos geneticos
+
+### Algoritmo genetico tradicional
+
+A Continuación se muestra el pseudocodigo de un algoritmo genetico
+
+```
+BEGIN /* genetic algorithm */
+  generate initial population
+  compute fitness of each individual
+  
+  WHILE NOT finished DO
+  BEGIN /* produce new generation */
+    
+    FOR population_size / 2 DO
+    BEGIN /* reproductive cycle */
+      select two individuals from old generation for mating
+      /* biassed in favour of the fitter ones */
+      recombine the two individuals to give two offspring
+      compute fitness of the two offspring
+      insert offspring in new generation
+    END
+    
+    IF population has converged THEN
+    finished := TRUE
+  END
+  
+END
+```
+
 
 ## Frameworks
 
